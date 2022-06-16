@@ -1,6 +1,6 @@
 # CB-Safe Simulation AI documentation
 
-[< Back](README.md)
+[< Back](../README.md)
 
 ---
 
