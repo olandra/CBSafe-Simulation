@@ -1,4 +1,7 @@
 # Navigation utilities
+CBSafe.Simulation.AI.UtilNavigation
+
+[< Back](UtilsIndex.md)
 
 ---
 

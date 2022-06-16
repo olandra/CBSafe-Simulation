@@ -2,5 +2,8 @@
 
 ---
 
-[Documentation main page](Documentation.md)
+[Documentation main page](./Documentation/Documentation.md)
+
+[Information about the tools](./Tools/Tools.md)
+
 

@@ -1,6 +1,8 @@
 # Component utilities
 CBSafe.Simulation.AI.UtilStatusComponent
 
+[< Back](UtilsIndex.md)
+
 ---
 
 _void RemoveAIReadyComponent(GameObject)_

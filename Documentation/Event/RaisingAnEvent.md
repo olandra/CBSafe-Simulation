@@ -2,7 +2,7 @@
 
 ---
 
-[< Back](../Documentation.md)
+[< Back](Documentation.md)
 
 ## Table of Contents
 
