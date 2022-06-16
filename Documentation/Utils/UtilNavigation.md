@@ -8,6 +8,9 @@ CBSafe.Simulation.AI.UtilNavigation
 _bool InWater(GameObject)_
 - Checks if the GameObject is in the water
 
+_Vector3 GetNormalVector(Vector3, Vector3)_
+- Gets the normal vector from start towards end
+
 _NavMeshHit FindClosestNavMeshAreaSamplePosition(NavMeshAgent, Vector3, string, float)_
 - Gets the closest position to the given NavMesh area
 

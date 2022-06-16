@@ -29,3 +29,6 @@ _GameObject FindClosestRescuable(GameObject, List\<GameObject\>)_
 _GameObject CanSeeRescuables(GameObject, GameObject, bool)_
 - Checks if the NPC can see a rescuable and returns the closest one
 
+_GameObject FindWithTag(Transform, string)_
+- Finds the child object with the given tag
+
