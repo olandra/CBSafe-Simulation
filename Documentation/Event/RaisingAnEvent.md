@@ -46,12 +46,15 @@ Include the words in any order into the command string given to the `AIEvent.Sen
 | --- | --- |
 | Rescue | Task to rescue the rescuables |
 | Search | Task to order a search pattern (see Search Pattern table for extra definitions) |
+| Fire | Task to extinguish fire |
 
 | Method | Description |
 | --- | --- |
 | Swim | Complete the task by swimming |
 | Raft | Complete the task using the raft (if the raft is not ready, will prepare it for use) |
 | Dive | Complete the task by diving (if the crew doesn't have diving gear, will first grab those) |
+| Water | Use water inventory for extinguishing |
+| Foam | Use foam inventory for extinguishing |
 
 | Search Pattern | Description |
 | --- | --- |
