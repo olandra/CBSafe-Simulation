@@ -17,17 +17,23 @@ _void ChangeForwardDerection(GameObject, GameObject)_
 _void ChangeForwardDerection(GameObject)_
 - Turns the GameObject around while keeping all child GameObject facing the original direction
 
-_bool CanSeeTarget(GameObject, Transform, bool)_
+_List\<GameObject\> RemoveNullsFromListGameObject(List\<GameObject\>)_
+- Removes nulls from the provided list of GameObjects
+
+_bool CanSeeTarget(GameObject, Transform, float)_
 - Can the NPC see it's target
 
-_List\<GameObject\> GetVisibleRescuables(GameObject, List\<GameObject\>, bool)_
-- Gets a list of all rescuables the NPC can see
+_List\<GameObject\> GetVisibleObjects(GameObject, List\<GameObject\>, float)_
+- Gets a list of all objects the NPC can see
 
-_GameObject FindClosestRescuable(GameObject, List\<GameObject\>)_
-- Gets the closest rescuable the NPC can see
+_GameObject FindClosestObject(GameObject, List\<GameObject\>)_
+- Gets the closest object the NPC can see
 
 _GameObject CanSeeRescuables(GameObject, GameObject, bool)_
 - Checks if the NPC can see a rescuable and returns the closest one
+
+_GameObject CanSeeFires(GameObject, GameObject)_
+- Checks if the NPC can see a fire and returns the closest one
 
 _GameObject FindWithTag(Transform, string)_
 - Finds the child object with the given tag

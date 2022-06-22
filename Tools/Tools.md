@@ -37,6 +37,12 @@ I ended up simply turning off these two warning via .editorconfig file. It seems
 
 After those two supressed warnings, there is but one thing I'm missing from Visual Studio. Ctrl + R Ctrl + E for Encapsulate Field shortcut. I haven't yet looked for or created a snippet for properties for VS Code, but that's a small matter when compared to the benefits like Vim emulation.
 
+For those who wish to learn how to use Vim and it's control "melody", I would suggest installing VS Code extension called "Learn Vim" by vintharas. It's a great book which has been implemented in VS Code with an interactive do-it-yourself documents. This allows you to read and try in practise simultaneously.
+
+While this extension provides just the tip of the iceberg about Vim, it's a good place to start. For an advanced user, it still provides a nice Cheatsheet and some new things and ways of thinking when using Vim.
+
+Just remember, learning Vim takes time and patience and in some cases, it might even feel unnatural. However, if you keep pushing forward, you'll soon find the old way even more unnatural.
+
 ## Obsidian
 https://obsidian.md/
 

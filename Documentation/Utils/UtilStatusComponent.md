@@ -20,3 +20,6 @@ _void RemoveAITaskDoneComponent(GameObject)_
 _void RemoveAISearchingComponent(GameObject)_
 - Removes the AISearching status component from the given GameObject
 
+_void RemoveAIExtinguishingComponent(GameObject)_
+- Removes the AIExtinguishing status component from the given GameObject
+
