@@ -47,6 +47,7 @@ Include the words in any order into the command string given to the `AIEvent.Sen
 | Rescue | Task to rescue the rescuables |
 | Search | Task to order a search pattern (see Search Pattern table for extra definitions) |
 | Fire | Task to extinguish fire |
+| Surface | The new principle for surface rescue |
 
 | Method | Description |
 | --- | --- |
@@ -60,4 +61,4 @@ Include the words in any order into the command string given to the `AIEvent.Sen
 | --- | --- |
 | Shoreline + Direction | Search along the shoreline, moving outwards each turn - **Requires** "**Left**" or "**Right**" for the direction |
 | Sector + Direction | Search a sector from the target position. Angle is defined in ScenarioVariables - **Requires** **"Left"**, **"Right"**, **"In"** or **"Out"** for the direction |
-| Circle | Search a full circle from the target, moving outwards after each circle |
+

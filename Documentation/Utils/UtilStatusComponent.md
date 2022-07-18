@@ -23,3 +23,6 @@ _void RemoveAISearchingComponent(GameObject)_
 _void RemoveAIExtinguishingComponent(GameObject)_
 - Removes the AIExtinguishing status component from the given GameObject
 
+_void RemoveAIExtinguishingFireComponent(GameObject)_
+- Removes the AIExtinguishingFire status component from the given GameObject
+
