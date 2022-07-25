@@ -1,6 +1,6 @@
 # How to add a new chain of states
 
-[< Back](../Documentation.md)
+[README](../../README.md) / [Documentation](../Documentation.md)
 
 ---
 

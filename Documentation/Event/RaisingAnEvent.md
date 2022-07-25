@@ -1,6 +1,6 @@
 # Raising an Event
 
-[< Back](../Documentation.md)
+[README](../../README.md) / [Documentation](../Documentation.md)
 
 ---
 
@@ -23,7 +23,7 @@ The AI itself is made autonomous, but it does rely on commands given by the squa
 2. Create a new object in `Start()`:
 	`aiEvent = new CBSafe.Simulation.AI.AIEvent();`
 3. Call the method to raise an event:
-	`aiEvent.SendOrderEvent("Player1", "RescueSwim", BellaBoat.transform.position);`
+	`aiEvent.SendOrderEvent("Player1", "Surface", BellaBoat.transform.position);`
 
 The declaration of the method is: `public void SendOrderEvent(string leader, string order, Vector3 target)`
 
@@ -34,7 +34,7 @@ The declaration of the method is: `public void SendOrderEvent(string leader, str
 Examples  
 
 Please refer to the AI Testing file: 
-`./Assets/Scripts/AI/Testing/StateMachine/AITesting/TestingUI/AITestingUIController.cs`
+`./Assets/Scripts/AI/Testing/StateMachine/AITesting/TestingUI/TestingUI.cs`
 
 ---
 
@@ -44,16 +44,14 @@ Include the words in any order into the command string given to the `AIEvent.Sen
 
 | Task | Description |
 | --- | --- |
-| Rescue | Task to rescue the rescuables |
+| Surface | Task for surface rescue principle |
 | Search | Task to order a search pattern (see Search Pattern table for extra definitions) |
 | Fire | Task to extinguish fire |
 | Surface | The new principle for surface rescue |
+| Return (Boat only) | Return task for the boat |
 
 | Method | Description |
 | --- | --- |
-| Swim | Complete the task by swimming |
-| Raft | Complete the task using the raft (if the raft is not ready, will prepare it for use) |
-| Dive | Complete the task by diving (if the crew doesn't have diving gear, will first grab those) |
 | Water | Use water inventory for extinguishing |
 | Foam | Use foam inventory for extinguishing |
 

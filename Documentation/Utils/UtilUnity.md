@@ -1,7 +1,7 @@
 # General Unity utilities
 CBSafe.Simulation.AI.UtilUnity
 
-[< Back](UtilsIndex.md)
+[README](../../README.md) / [Documentation](../Documentation.md) / [Utility classes](UtilsIndex.md)
 
 ---
 

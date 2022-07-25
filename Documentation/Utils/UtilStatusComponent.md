@@ -1,7 +1,7 @@
 # Component utilities
 CBSafe.Simulation.AI.UtilStatusComponent
 
-[< Back](UtilsIndex.md)
+[README](../../README.md) / [Documentation](../Documentation.md) / [Utility classes](UtilsIndex.md)
 
 ---
 

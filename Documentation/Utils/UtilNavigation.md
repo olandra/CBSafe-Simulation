@@ -1,7 +1,7 @@
 # Navigation utilities
 CBSafe.Simulation.AI.UtilNavigation
 
-[< Back](UtilsIndex.md)
+[README](../../README.md) / [Documentation](../Documentation.md) / [Utility classes](UtilsIndex.md)
 
 ---
 
