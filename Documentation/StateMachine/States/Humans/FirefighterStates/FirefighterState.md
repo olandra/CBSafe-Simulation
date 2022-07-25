@@ -41,4 +41,4 @@ _public bool NeedsSwimmingSuit()_
 
 | Class | Description |
 | --- | --- |
-| [FirefighterIdle](Humans/FirefighterStates/FirefighterIdle.md) | Idle state for the firefighter |
+| [FirefighterIdle](FirefighterIdle.md) | Idle state for the firefighter |
