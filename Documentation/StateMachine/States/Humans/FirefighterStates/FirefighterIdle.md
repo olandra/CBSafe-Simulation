@@ -70,34 +70,66 @@ _public void SurfaceRescueTask()_
 
 ![Member1 SurfaceRescueTask](../../../../Images/FirefighterIdleSurfaceRescueTaskMember1.png)
 
-_public void GetSwimmingSuit()_
+![Driver SurfaceRescueTask](../../../../Images/FirefighterIdleSurfaceRescueTaskDriver.png)
 
+![Member2 SurfaceRescueTask](../../../../Images/FirefighterIdleSurfaceRescueTaskMember2.png)
+
+
+_public void GetSwimmingSuit()_
+- Sets stateMachine.Target to the LeftOfCarObject position
+- Sets nextState to new FirefighterWalk()
+- Sets stage to EVENT.EXIT
 
 _public void GetDivingGear()_
-
+- Sets stateMachine.Target to the DivingGearLication position
+- Sets nextState to new FirefighterWalk()
+- Sets stage to EVENT.EXIT
 
 _public void StartShorelineSearch()_
-
+- Checks if Member1 has diving gear on -> GetDivingGear() if not
+- Finds a location 1 meter inland from the shoreline from the position of the accident place
+- Sets each member a stateMachine.Target based on that inline position so that they form a line in direction of the inline position's normal vector towards water
+- Sets nextState to new FirefighterWalk()
+- Sets stage to EVENT.EXIT
 
 _public void StartSectorSearch()_
-
+- Checks if Member1 has diving gear on -> GetDivingGear() if not
+- Checks that the given target location is in water -> return if not
+- Driver gets stateMachine.Target set to 1 m inline from the shoreline from the position of the accident place
+- SectorSearchAnchor gets position set by the earlier hit from the check if the target is in water
+- Member1 gets a stateMachine.Target set by the SectorSearchAnchor
+- Member2 gets a stateMachine.Target 1 m behind the Driver
+- Each member has nextState set to new FirefighterWalk()
+- Each member has stage set to EVENT.EXIT
 
 _public void Extinguish()_
-
-
+- Each member gets a stateMachine.Target from the back of the car, so that they form a line from the Driver being the closest
+- Each member has nextState set to new FirefighterWalk()
+- Each member has stage set to EVENT.EXIT
 
 ### Exit conditions
 
-| Condition | Leads to | Sets |
-| --- | --- | --- |
-|  |  |  |
+| Condition | Leads to |
+| --- | --- |
+| AITaskDone component | [FirefighterWalk](FirefighterWalk.md) |
+| GivenTask == SURFACE | [FirefighterWalk](FirefighterWalk.md) |
+| GivenTask == SURFACE && NeedsSwimmingSuit() | [FirefighterWalk](FirefighterWalk.md) |
+| GivenTask == SEARCH && Pattern == SHORELINE | [FirefighterWalk](FirefighterWalk.md) |
+| GivenTask == SEARCH && Pattern == SHORELINE && NeedsSwimmingSuit() | [FirefighterWalk](FirefighterWalk.md) |
+| GivenTask == SEARCH && Pattern == SECTOR && NeedsSwimmingSuit() | [FirefighterWalk](FirefighterWalk.md) |
+| GivenTask == SEARCH && Pattern == SECTOR && NeedsSwimmingSuit() && NeedsSwimmingSuit() | [FirefighterWalk](FirefighterWalk.md) |
+| GivenTask == FIRE | [FirefighterWalk](FirefighterWalk.md) |
 
 ### Referenced by
 
-- 
-
-### Derived classes
-
-| Class | Description |
-| --- | --- |
-|  |  |
+- [AIStateMachineFirefighter](../../../AIStateMachineFirefighter.md)
+- [FirefighterReturnHose](Extinguish/FirefighterReturnHose.md)
+- [FirefighterWalk](FirefighterWalk.md)
+- [FirefighterAssistRescue](SurfaceRescue/FirefighterAssistRescue.md)
+- [FirefighterRescue](SurfaceRescue/FirefighterRescue.md)
+- [FirefighterSectorSearch](SurfaceRescue/FirefighterSectorSearch.md)
+- [FirefighterShorelinePhase1](SurfaceRescue/FirefighterShorelinePhase1.md)
+- [FirefighterShorelinePhase2](SurfaceRescue/FirefighterShorelinePhase2.md)
+- [FirefighterSwimmingSuit](SurfaceRescue/FirefighterSwimmingSuit.md)
+- [FirefighterTakeDivingGear](SurfaceRescue/FirefighterTakeDivingGear.md)
+- [FirefighterUsingRaft](SurfaceRescue/FirefighterUsingRaft.md)

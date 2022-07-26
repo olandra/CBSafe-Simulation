@@ -64,3 +64,4 @@ _public State Process()_
 | BoatState | Common parent for all boat states |
 | CarState | Common parent for all CarStates |
 | RaftState | Common parent for all Raft states |
+| [AITestingState](AITestingState.md) | A state that can be used for testing and as an end point for new state chains during development |
